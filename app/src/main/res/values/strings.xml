@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">BodyBuilding App</string>
+    <string name="title_workout">Workout</string>
+    <string name="title_nutrition">Nutrition</string>
+    <string name="title_local_gym">Local Gym</string>
+    <string name="title_tools">Tools</string>
+    <string name="description">BodyBuildingApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello 1</string>
+    <string name="hello_blank_fragment2">Hello 2</string>
+    <string name="hello_blank_fragment3">Hello 3</string>
+    <string name="hello_blank_fragment4">Hello 4</string>
+
+    <string name="bmi_calculator">BMI calculator</string>
+    <string name="macro_calculator">Macro Calculator</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="feet">Feet</string>
+    <string name="meters">Meters</string>
+    <string name="pounds">Pounds</string>
+    <string name="kilograms">Kilograms</string>
+    <string name="meter">Meters</string>
+    <string name="centimeter">Centimeters</string>
+    <string name="inch">Inches</string>
+    <string name="API_Key">AIzaSyAfBBYBCGWbpMFmBjyY7S5GXdiS7dyvqTU</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_workout"
+        android:icon="@drawable/icons8_dumbbell_480"
+        android:title="@string/title_workout" />
+
+    <item
+        android:id="@+id/navigation_nutrition"
+        android:icon="@drawable/icons8_vegan_food_480"
+        android:title="@string/title_nutrition" />
+
+    <item
+        android:id="@+id/navigation_local_gym"
+        android:icon="@drawable/icons8_marker_480"
+        android:title="@string/title_local_gym" />
+
+    <item
+        android:id="@+id/navigation_tools"
+        android:icon="@drawable/icons8_calculator_480"
+        android:title="@string/title_tools" />
+
+</menu>

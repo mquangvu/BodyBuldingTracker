@@ -1,0 +1,221 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+
+            android:ems="10"
+            android:hint="Years"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/textView1"
+
+            />
+
+        <EditText
+            android:id="@+id/txtHeight1"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:ems="10"
+            android:hint="Feet"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/HeightGroup" />
+
+        />
+
+        <EditText
+            android:id="@+id/txtHeight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="210dp"
+            android:ems="10"
+            android:hint="Inches"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/HeightGroup" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="AGE" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:text="SEX"
+            app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="145dp"
+            android:text="HEIGHT" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="270dp"
+            android:text="WEIGHT" />
+
+        <EditText
+            android:id="@+id/txtWeight"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="330dp"
+            android:ems="10"
+            android:hint="Pounds"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="380dp"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="450dp"
+            android:text="RESULT:" />
+
+
+
+
+
+    <RadioGroup
+
+
+        android:id="@+id/SexGroup"
+        android:layout_width="408dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/WeightGroup"
+        app:layout_constraintStart_toStartOf="@+id/frame_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside">
+
+        <RadioButton
+            android:id="@+id/male_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="Female" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/HeightGroup"
+        android:layout_width="413dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="370dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frame_container"
+        app:layout_constraintTop_toBottomOf="@+id/SexGroup">
+
+        <RadioButton
+            android:id="@+id/feet_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="Feet" />
+        />
+
+        <RadioButton
+            android:id="@+id/meter_rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="Meters" />
+        />
+    </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/WeightGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="00dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HeightGroup">
+
+            <RadioButton
+                android:id="@+id/pound_rbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="Pounds" />
+
+            <RadioButton
+                android:id="@+id/kilo_rbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="Kilograms" />
+        </RadioGroup>
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
